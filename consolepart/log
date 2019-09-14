@@ -1,0 +1,32 @@
+touch Hello.java
+
+//
+package com.courses;
+
+public class Hello {
+	public void printHello(){
+		System.out.println("Hello");
+	}
+}
+//
+
+$ javac -d out src/com/courses/Hello.java
+
+touch Launcher.java
+
+//
+package com.java;
+
+import com.courses.Hello;
+
+public class Launcher {
+	public static void main (String args []){
+		Hello hello = new Hello();
+		hello.printHello();
+	}
+}
+//
+
+$ javac -d ./out ./src/com/courses/Hello.java ./src/com/java/Launcher.java
+
+$ java -cp ./out com.java.Launcher
