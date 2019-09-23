@@ -73,7 +73,7 @@ public class NumberUtil {
         return result.toString();
     }
 
-    public static long BinaryToIntConsole() {
+    public static long binaryToIntConsole() {
         System.out.println("Enter number in binary format");
         return NumberUtil.binaryToInt(new Scanner(System.in).nextLine());
     }
